@@ -6,66 +6,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>hellworld</title>
     <style>
-        .total {
-            width: 1172px;
-            height: 177px;
-            margin: 0px auto 0px auto;
+       
+        body {
+            background-image: url(por2.png), url(blackcopy.png);
+            background-size:cover, cover;
+            background-position: center, center;
+            background-repeat: no-repeat;
+            height: 100vh;
+            width: 100vw;
+            padding: 0px;
         }
-        
-        .ttitle {
-            margin: 430px auto;
-            text-align: center;
-        }
-
-        .pportal {
-            margin: -559px 0px auto 85px;
-            text-align: center;
-            cursor: pointer;
-        }
-        
-        .pportal:hover {
-            <a href="#">Outer Glow</a>
-        }
-        
         @media (max-width: 1280px) {
-            body {background: #FFFFFF;}
+            body {background-image: url(blackcopy.png);}
             h1::before {content: '2. ';}
             h1::after {content: ' - 1025 ~ 1280';}
-        
-         @media (max-width: 1024px){
-            body {background: #FFFFFF;}
+        }
+        /* 화면 너비가 0 ~ 1024px : 데스크탑 */
+        @media (max-width: 1024px){
+            body {background-image: url(blackcopy.png);}
             h1::before {content: '3. ';}
             h1::after {content: ' - 961 ~ 1024';}
-        
-         @media (max-width: 960px){
-            body {background: #FFFFFF;}
+        }
+        /* 화면 너비가 0 ~ 960px : 노트북 */
+        @media (max-width: 960px){
+            body {background-image: url(blackcopy.png);}
             h1::before {content: '4. ';}
             h1::after {content: ' - 577 ~ 768';}
-         
-         @media (max-width: 768px){
-            body {background: #FFFFFF;}
+        }
+        /* 화면 너비가 0 ~ 768px : 태블릿 */
+        @media (max-width: 768px){
+            body {background-image: url(blackcopy.png);}
             h1::before {content: '5. ';}
             h1::after {content: ' - 577 ~ 768';}
+        }        
+
+
+
+
              
     </style>   
 
 </head>
+
 <body>
-
-
-    <div class="total">
-        <div class="ttitle">
-            <img src="title.png">
-        </div>
-        <div class="pportal">
-            <a href="https://jannie202.github.io/videow/" target="_blank">
-            <img src="portal.png"> 
-            </a>
+    <div style="width:100vw; height: 100vh; display: flex; align-items: center;">   
+        <div style="cursor:pointer; width:204px; height:106px; margin: 0 auto;" onclick="location.href='https://jannie202.github.io/videow/';"> 
         </div> 
-    </div>
-  
-    
-
-    
+       
+    </div> 
 </body>
 </html>
