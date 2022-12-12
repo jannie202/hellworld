@@ -40,9 +40,13 @@
             h1::after {content: ' - 577 ~ 768';}
         }        
 
-
-
-
+        /* 화면 너비가 0 ~ 576 : 모바일 */
+        @media (max-width: 576px){
+            body {background-image: url(blackcopy.png);}
+            h1::before {content: '5. ';}
+            h1::after {content: ' - 0 ~ 576';}
+        }
+        
              
     </style>   
 
