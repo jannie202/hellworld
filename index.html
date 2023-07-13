@@ -43,12 +43,35 @@
             background-image: url(./por2.png);
           }
         }
+
+	<div class="box">
+    		<div class="content">1:1 비율</div>
+	</div>
+
+	.box {
+    		position: relative;
+    		width: 206px; /* 원하는 너비 */
+	}
+
+	.box:before {
+    		content: "";
+    		display: block;
+    		padding-top: 50%; 
+	}
+
+	.content {
+    		position: absolute;
+   		top: 0;
+    		right: 0;
+    		bottom: 0;
+    		left: 0;
+	}
              
     </style>   
 </head>
 
 <body>
-	<div style=" position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); text-align: center; justify-content: center; background-color: gold; max-width: 100%; height: auto; padding-top: 56.25% cursor: pointer;" onclick="location.href='http://moonhouse.co.kr';"> 
+	<div style=" background-color: gold; cursor: pointer;" onclick="location.href='http://moonhouse.co.kr';"> 
 	</div>
 
 	
