@@ -17,7 +17,9 @@
             padding: 0px;
 
 
-        <div class="ex-midea"></div>
+        <div class="ex-midea">
+		<div class="child"></div>
+	</div>
         .ex-midea {
 	        max-width: 100%;
     	        width: 400px;
@@ -28,6 +30,19 @@
 		position: relative;
                 padding: 0px
         }
+
+	.child {
+  		width: 206px;
+  		height: 104px;
+  		background-color: red;
+  		/* 상하좌우 정중앙 정렬하기 */
+  		position: relative;
+		padding-top: 56.25%;
+		overflow: hidden;
+  		top: 50%;
+  		left: 50%;
+  		margin: -25px 0 0 -25px; /* 자식 요소 전체를 중앙 정렬하기 위해, 상단 및 왼쪽 margin을 마이너스 값으로 적용하기 */
+		}
 
         @media (min-width: 401px) {
         .ex-midea {
