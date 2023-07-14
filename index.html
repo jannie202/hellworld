@@ -18,8 +18,6 @@
 
 
         <div class="ex-midea">
-		<div class="wrap">
-		</div>
 	</div>
 		
         .ex-midea {
@@ -31,24 +29,24 @@
         	background-size: contain;
 		position: relative;
                 padding: 0px
-        }
-	#movie-player-wrapper {
-		position: relative;
-		width: 100%;
-		height: 0;
-		overflow: hidden;
-		padding-bottom: 56.26%;
-		max-width: 206px;
-		padding-bottom: min(50%);
+
+
+
+	.container {
+		height: 100vh;
+    		width: 100vw;
 	}
-	#movie-player-wrapper .wrap {
-		position: absolute;
-		top: 0;
-		left: 0;
-		width: 100%;
-		height: 100%;
-		background-color: orange;
-	}
+
+	.img_item {
+		width: 206px;
+    		height: 104px;
+    		margin: 0 auto;
+    
+    		background-color: red;
+    		background-repeat: no-repeat;
+    		background-position: center center;
+    		backgorund-size: 100% 100%;
+	}	
 
         @media (min-width: 401px) {
         .ex-midea {
@@ -72,6 +70,9 @@
 </head>
 
 <body>
-
+	<div class="containter">
+    		<div class="img_item">
+        	</div>
+    	</div>
 </body>
 </html>
