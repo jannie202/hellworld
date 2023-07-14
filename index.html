@@ -41,28 +41,41 @@
   		object-fit: cover;
   		border-radius: 50%;
 	}
+	/* PC (해상도 1024px)*/ 
+	@media all and (min-width:1024px) {
+  		.box {
+  			position: relative;
+  			width: 12%;
+  			background-color: skyblue;
+			position: absolute;
+  			top: 51%;
+  			left: 51%;
+  			transform: translate(-50%,-50%);
+	} 
 
-        @media (min-width: 401px) {
-        .box {
-		position: relative;
-  		width: 12%;
-  		background-color: skyblue;
-		position: absolute;
-  		top: 60%;
-  		left: 49%;
-  		transform: translate(-50%,-50%);
-            }
-        }
+	/* 테블릿 가로, 테블릿 세로 (해상도 768px ~ 1023px)*/ 
+	@media all and (min-width:768px) and (max-width:1023px) {
+  		  .box {
+  			position: relative;
+  			width: 12%;
+  			background-color: skyblue;
+			position: absolute;
+  			top: 51%;
+  			left: 51%;
+  			transform: translate(-50%,-50%);
+	} 
 
-        @media (min-width: 701px) {
-        .ex-midea {
-		position: relative;
-  		width: 12%;
-  		background-color: skyblue;
-		position: absolute;
-  		top: 55%;
-  		left: 40%;
-  		transform: translate(-50%,-50%);
+	/* 모바일 가로, 모바일 세로 (해상도 480px ~ 767px)*/ 
+	@media all and (max-width:767px) {
+  		  .box {
+  			position: relative;
+  			width: 12%;
+  			background-color: skyblue;
+			position: absolute;
+  			top: 57%;
+  			left: 51%;
+  			transform: translate(-50%,-50%);
+	}
 
 	
              
