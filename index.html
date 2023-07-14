@@ -74,6 +74,25 @@
   			width: 12%;
   			background-color: skyblue;
 			position: absolute;
+  			top: 51%;
+  			left: 50.5%;
+  			transform: translate(-50%,-50%);
+		}
+
+		.box::after {
+  			display: block;
+  			content: "";
+  			padding-bottom: 65%;
+		}
+	}
+	   
+	/* 모바일 가로, 테블릿 세로 (해상도 ~ 479px)*/ 
+	@media all and (max-width:479px) {
+		  .box {
+  			position: relative;
+  			width: 12%;
+  			background-color: skyblue;
+			position: absolute;
   			top: 57%;
   			left: 50.5%;
   			transform: translate(-50%,-50%);
@@ -82,7 +101,7 @@
 		.box::after {
   			display: block;
   			content: "";
-  			padding-bottom: 80%;
+  			padding-bottom: 70%;
 		}
 	}
 
