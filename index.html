@@ -16,24 +16,32 @@
             width: 100vw;
             padding: 0px;
 	}
-
-	<img src="por2.png" alt="image" class="responsive-image">
-	
-	.responsive-image {
-  		width: 100%;
-  		height: auto;
-  		max-width: 1920px; /* 이미지 최대 너비 지정 */
+	    
+	.container {
+		height: 100vh;
+    		width: 100vw;
 	}
 
-	@media (max-width: 768px) {
-  		.responsive-image {
-    			max-width: 768px; /* 화면 너비가 768px 이하인 경우 이미지 최대 너비를 500px로 조정 */
-  		}
+	.img_item {
+		width: 100%;
+    		height: 100%;
+    		margin: 0 auto;
+    
+    		background-image: url(por2.png);
+    		background-repeat: no-repeat;
+    		background-position: center center;
+    		backgorund-size: 100% 100%;
 	}
 	
     </style>   
 </head>
 
 <body>
+	
+	<div class="containter">
+    		<div class="img_item">
+        	</div>
+    	</div>
+
 </body>
 </html>
